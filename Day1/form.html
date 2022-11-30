@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <style>
+        .basic{
+            background-color: #FFE5B4;
+            border-style: solid
+        }
+    </style>
+</head>
+<body>
+<center>
+
+<form action="store.html" name="form1" class="basic">
+<p>
+    Enter first name :
+    <input 
+        type="text" 
+        name="firstname" 
+        id="firstname" 
+        required/>
+        </p>
+        <p>
+        Enter lastname :
+        <input 
+            type="text" 
+            name="lastname" 
+            id="lastname" 
+            required
+            />
+    </p>
+    <p>
+            Enter address :
+            <input type="textarea" rows="4" cols="11" name="mail" id="mail"/>
+    </p>
+    <p>
+    Programs attended:
+    <input type="checkbox" id="program1" name="program"/>HTML
+    <input type="checkbox" id="program2" name="program"/>CSS 
+    <input type="checkbox" id="program3" name="program"/>Oracle
+    </p>
+    <p>
+    Select the stream you belong to :
+    <input type="radio" id="stream1" name="streams"/>Mech 
+    <input type="radio" id="stream2" name="streams"/>EEE 
+    <input type="radio" id="stream3" name="streams"/>CS
+    <input type="radio" id="stream4" name="streams"/>IT
+    </p>
+    <p>
+    Which training program would you like to attend?
+    <select id="training"/>
+        <option>HTML5 Advanced</option>
+        <option>Javascript</option>
+        <option>angular</option>
+</select>
+
+</p>
+<p>
+upload your resume
+<input
+type="file" size="15" name="fnm"> </p> 
+
+<p>
+<input
+type="hidden" value="myco" name="coname"> <br> <input
+type="button" value="exit" name="but"> <input type="submit"
+value="save"> <input type="reset" value="reset">
+
+        <input type="submit" value="Register"/>
+</p>
+
+</form>
+</center>
+</body>
+</html>

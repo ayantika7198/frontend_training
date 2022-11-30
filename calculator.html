@@ -1,0 +1,18 @@
+<html>
+    <head><style></style></head>
+    <body>
+    <p>
+        <input type="number" id="num1" value="0" oninput="add()"/>+
+        <input type="number" id="num2" value="0" oninput="add()"/>
+        <div id="result">0+0=0</div>
+    </p>
+    <script>
+        function add(){
+            var x=parseInt(document.getElementById("num1").value);
+            var y=parseInt(document.getElementById("num2").value);
+            var res=x+y;
+            document.getElementById("result").innerHTML=x+"+"+y+"="+res;
+        }
+        </script>
+    </body>
+</html>

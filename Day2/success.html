@@ -1,0 +1,19 @@
+
+
+<html>
+    <head><style></style>
+        
+    </head>
+    <body>
+
+        <p id="result"></p>
+   <p id ="lat"></p>
+   <p id="long"></p>
+   <p id="acc"></p>
+        <script type="text/javascript" src="page.js"></script>
+        <script>
+            var name=storage.getItem('user');
+    document.getElementById("result").innerHTML=`<h1>Welcome ${name}</h1>`;
+            </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head><style></style>
+    
+        <script>
+            function bigSize(){
+                document.getElementById("heading").style.backgroundColor= 'aqua';
+            }
+
+            function color(){
+                document.getElementById("name").style.backgroundColor= 'green';
+            }
+
+            function change(){
+                document.getElementById("heading2").style.backgroundColor='yellow';
+                document.getElementById("heading2").style.borderStyle='solid';
+            }
+
+            function mouseMove(event){
+                var x=event.clientX;
+                var y=event.clientY;
+                document.getElementById("mouseCoords").innerHTML=`X ${x} Y ${y}`;
+            }
+           
+            function blur(){
+                var x=document.getElementById("name");
+                x.style.backgroundColor= 'yellow';
+            }
+            
+            function myError(){
+                alert('The video cannot be loaded');
+            }
+            function myErrorAudio(){
+                alert('The audio cannot be loaded');
+            }
+            function canplay(){
+                document.getElementById("videoCheck").style.backgroundColor= 'aqua';
+            }
+            function audioPlay(){
+                document.getElementById("audioCheck").style.backgroundColor= 'aqua';
+            }
+            </script>
+            </head>
+    <body onmousemove="mouseMove(event)">
+
+        <div id="mouseCoords"></div>
+
+        <h1 id="heading" onclick="bigSize()">Heading 1</h1>
+<form>
+        <p><input type="text" id="name" onfocus="color()" onblur="blur()"/></p>
+
+</form>
+        <h4 id="heading2" ondblclick="change()">Heading 2</h4>
+
+
+        <video id="videoCheck" oncanplay="canplay()" onerror="myError()" width="320" height="420" controls>
+            <source src="myVideo.mp4"/>
+        </video>
+
+        <audio id="audioCheck" oncanplay="audioPlay()" onerror="myErrorAudio()" controls>
+            <source src="myAudio.mp3"/>
+        </audio>
+    </body>
+</html>

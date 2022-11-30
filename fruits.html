@@ -1,0 +1,20 @@
+<html>
+    <head><style></style>
+    <script>
+        function fruits(){
+            var fr=document.getElementById("fruit").value;
+            document.getElementById("result").innerHTML="Selected : "+fr;
+        }
+        </script>
+    
+    </head>
+    <body>
+
+        <select id="fruit" onclick="fruits()">
+            <option value="Apple" selected>Apple</option>
+            <option value="Guava">Guava</option>
+            <option value="Strawberry">Strawberry</option>
+        </select>
+        <p id="result"></p>
+    </body>
+</html>

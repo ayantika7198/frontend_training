@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+    h1{
+        background-color: black;
+        color: white;
+    }
+
+    header{
+        background-color: black;
+        padding: 2px;
+        text-align: center;
+        font-size: 1em;
+        color: white;
+    }
+
+    section{
+        display: flex;
+    }
+    nav{
+      flex: 1;
+      background-color: skyblue;
+      padding: 20px;
+
+    }
+
+    nav li{
+        list-style-type: none;
+        padding: 0;
+    }
+    article{
+
+
+        flex:3;
+        background-color: pink;
+        padding: 5px;
+    }
+
+    footer {
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    @media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <h1>Beautiful Flowers</h1>
+        <p>We’ve included a wide variety of various blooms, including common types of flowers and maybe some species you’ve never heard of. Along with the names and pictures of the flowers, you’ll find interesting details about the beautiful blooms. </p>
+        <header>Flowers</header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href = "#">Rose</a></li>
+                    <li><a href = "#">Tulip</a></li>
+                    <li><a href = "#">Sunflower</a></li>
+                    <li><a href = "#">Lilies</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>
+                    Rose
+                </h1>
+                <p>A rose is a plant that is a member of the genus Rosa, which consists of some 100 species of perennial shrubs in the rose family. Many roses are cultivated for their beautiful flowers, which range in colour from white through various tones of yellow and pink to dark crimson and maroon.</p>
+            </article>
+        
+        
+        </section>
+        
+        <footer>
+            <p>Footer</p>
+          </footer>
+    </body>
+</html>

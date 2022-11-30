@@ -1,0 +1,36 @@
+<htm>
+    <head><style></style>
+    <script>
+        function check(){
+            var x=document.getElementById("check");
+            var res="OFF";
+            if(x.checked){
+                res="ON";
+            }else{
+                res="OFF";
+                
+            }
+            document.getElementById("result").innerHTML=res;
+        }
+        function press(){
+            var x=document.getElementById("key").value;
+            document.getElementById("value").innerHTML=x+" is entered."
+        }
+        function pressUp(){
+            document.getElementById("key2").style.backgroundColor= 'red';
+        }
+        function pressDown(){
+            document.getElementById("key2").style.backgroundColor= 'green';
+        }
+        </script>
+    </head>
+    <body>
+
+        <p>CheckBox : <input type="checkbox" id="check" onclick="check()" /></p>
+        <p id="result">OFF</p>
+        <p>KeyEvent: </p>
+        <div><input type="text" id="key" oninput="press()"/></div>
+        <p id="value"></p>
+        <div><input type="text" id="key2" onkeyup="pressUp()" onkeydown="pressDown()"/></div>
+    </body>
+</html>
