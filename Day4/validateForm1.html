@@ -1,0 +1,36 @@
+<html><head><style>
+    form{
+        background-color: bisque;
+        border-style: solid;
+    }
+</style></head>
+<body>
+    <form autocomplete="on">
+        <h2>Application Form</h2>
+        <p><label for="name">Full Name</label>
+            <input type="text" name="name" id="name" required/></p>
+        <p><label for="mail">Email Address</label>
+            <input type="email" name="mail" id="mail" required/></p>
+        <p><label for="mobile">Mobile Number</label>
+            <input type="text" name="mobile" id="mobile" required/></p>
+        <p><label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option>India</option>
+                <option>USA</option>
+                <option>Nepal</option>
+                <option>France</option>
+                <option>Australia</option>
+            </select></p>
+        <p><label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" required>Male
+            <input type="radio" name="gender" id="female" required>Femaale
+        </p>
+        <p><label for="hobby">Hobbies (Optional)</label>
+            <input type="checkbox" name="hobby" id="sports">Sports
+            <input type="checkbox" name="hobby" id="movies">Movies
+            <input type="checkbox" name="hobby" id="music">Music
+        </p>
+        <p><input type="submit" name="submit" id="submit" value="Submit"/></p>
+        </form>
+</body>
+</html>

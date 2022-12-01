@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: coral;
+            }
+            h2{
+                color: darksalmon;
+            }
+            p{
+                background-color: cornflowerblue;
+            }
+            p:hover{
+                background-color: darkkhaki;
+            }
+            div{
+                color: darkmagenta;
+                writing-mode: vertical-rl;
+                font-size: 30px;
+            }
+            ul li:last-child{
+                background-color: red;
+            }
+            p::first-line{
+                background-color: darkseagreen;
+            }
+            p::before{
+                content: '*****';
+                color: darkviolet;
+            }
+
+            .btn1{
+                width: 25%;
+                transition : width 1.0s;
+                background-color: deepskyblue;
+                transition : background-color 1.0s;
+            }
+            .btn1:hover{
+                width: 50%;
+                transition : width 1.0s;
+                background-color: yellow;
+                transition : background-color 1.0s;
+            }
+            </style>
+    </head>
+    <body>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br>
+                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.<br>
+                cccccccccccccccccccccccccccccccc.</p>
+        <h1>This is h1 heading</h1>
+        <h2>Hover in CSS</h2>
+        <p>Style will change when you hover on it</p>
+        <div>This is a new paragraph</div>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Strawberry</li>
+        </ul>
+
+        <button class="btn1">Login</button>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html><head><style>
+
+    form{
+        background-color: aqua;
+        border-style: solid;
+    }
+</style></head>
+<body>
+    <center>
+    <form autocomplete="on">
+        <p><label for="empid">Employee Id</label><br>
+        <input type="text" name="id" id="id" required/></p>
+        <p><label for="name">First Name</label><br>
+        <input type="text" name="name" id="name" required/></p>
+        <p><label for="dept">Department</label><br>
+        <input type="text" name="dept" id="dept" required/></p>
+        <p><label for="mail">Email</label><br>
+        <input type="email" name="mail" id="mail" required/></p>
+        <p><label for="username">UserName</label><br>
+        <input type="text" name="username" id="username" minlength="4" maxlength="20" required/></p>
+        <p><label for="password">Password</label><br>
+        <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required/></p>
+        <p><input type="submit" name="submit" id="submit" value="Submit"/></p>
+    </form>
+    </center>
+</body>
+</html>
