@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            </style>
+            <script>
+                function show(){
+                    var t=document.getElementById("table1");
+                    if(t.style.display === "none"){
+                        t.style.display="block";
+                    }else{
+                        t.style.display="none";
+                    }
+                }
+                </script>
+    </head>
+    <body>
+        <button class="btn1" onclick="show()">Hide / Show</button>
+        <div id="table1">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>Ayantika</td>
+                <td>Kalyani</td>
+            </tr>
+            <tr>
+                <td>Chandni</td>
+                <td>Dumdum</td>
+            </tr>
+            <tr>
+                <td>Ritu</td>
+                <td>Kolkata</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

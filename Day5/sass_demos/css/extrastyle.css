@@ -1,0 +1,12 @@
+@import "basic.css";
+p {
+  background-color: purple;
+  border: 2px dotted white;
+}
+
+a {
+  background-color: brown;
+  border: 2px solid grey;
+}
+
+/*# sourceMappingURL=extrastyle.css.map */

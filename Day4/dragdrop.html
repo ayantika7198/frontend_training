@@ -1,31 +1,33 @@
 <html>
     <head>
         <style>
-           body{
-               display: flex;
-           }
+           #div1 {
+  width: 350px;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
             </style>
-        <script>
-            function drag1(){
-                var val1=document.getElementById("img1");
-                val1.style.opacity= 0;
-                var val2=document.getElementById("img2");
-                val2.style.opacity= 1;
-            }
-            function drag2(){
-                var val1=document.getElementById("img1");
-                val1.style.opacity= 1;
-                var val2=document.getElementById("img2");
-                val2.style.opacity= 0;
-            }
+       <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
         </script>
     </head>
     <body>
-        <div id="div1" style="background-color: lawngreen;" onclick="drag1()">
-            <img id="img1" src="kitten.jpg" width="350px" height="400px"/>
-        </div>
-        <div id="div2" style="background-color: lightcoral;" onclick="drag2()">
-            <img id="img2" src="kitten.jpg" width="350px" height="400px" style="opacity: 0;"/>
-        </div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="kitten.jpg" draggable="true" ondragstart="drag(event)" width="350" height="400">
+    
     </body>
 </html>

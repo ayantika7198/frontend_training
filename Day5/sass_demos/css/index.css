@@ -1,0 +1,48 @@
+p {
+  background-color: pink;
+  color: blue;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  background-color: violet;
+}
+
+.c1 {
+  border: 3px solid red;
+}
+.c1 if null {
+  border: 5px solid;
+}
+
+#div1 {
+  background-color: black;
+  font-size: 35px;
+  color: blanchedalmond;
+}
+
+p:nth-of-type(1) {
+  background-color: yellow;
+  border: 2px dashed deeppink;
+}
+
+p:nth-of-type(2) {
+  background-color: darksalmon;
+  border: 1px dotted purple;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p:nth-of-type(3) {
+  background-color: orange;
+  border: 2px dotted red;
+  font-size: 30px;
+}
+
+p:nth-of-type(4) {
+  background-color: green;
+  border: 2px solid blue;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=index.css.map */
