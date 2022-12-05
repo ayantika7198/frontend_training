@@ -1,0 +1,19 @@
+.div1 {
+  width: 80px;
+  background-color: blueviolet;
+  height: 80px;
+  transition: width 1s;
+  transition: background-color 1s;
+  border: 1px solid;
+}
+
+.div1:hover {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  width: 50%;
+  transition: width 1s;
+  transition: background-color 1s;
+}
+
+/*# sourceMappingURL=mixin_demo.css.map */

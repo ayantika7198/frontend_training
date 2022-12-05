@@ -1,0 +1,17 @@
+@each $color, $textcolor in ( blue,white),( green,yellow),(pink,darkviolet),( orange,green){
+    .c_#{$color}{
+        background-color: $color;
+        color:$textcolor;
+    }
+}
+
+
+@each $headings,$border in(
+    h1:1px solid red,
+    h2:2px dashed green,
+    h3:2rem double black,
+    h4:1.5rem dotted pink
+){
+#{$headings}{
+    border:$border;
+}}

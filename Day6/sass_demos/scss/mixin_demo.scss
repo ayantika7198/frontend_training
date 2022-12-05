@@ -1,0 +1,25 @@
+@mixin mixcolor1($size) {
+    width: $size;
+    background-color: blueviolet;
+    height: $size;
+    
+}
+
+@mixin mixColor2($size){
+    width: $size;
+    height: $size;
+    background-color: aquamarine;
+}
+.div1{
+    @include mixcolor1(80px);
+                transition : width 1.0s;
+                transition : background-color 1.0s;
+                border: 1px solid;
+}
+.div1:hover{
+    @include mixColor2(100px);
+    width: 50%;
+                transition : width 1.0s;
+                transition : background-color 1.0s;
+
+}

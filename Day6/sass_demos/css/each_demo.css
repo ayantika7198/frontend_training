@@ -1,0 +1,37 @@
+.c_blue {
+  background-color: blue;
+  color: white;
+}
+
+.c_green {
+  background-color: green;
+  color: yellow;
+}
+
+.c_pink {
+  background-color: pink;
+  color: darkviolet;
+}
+
+.c_orange {
+  background-color: orange;
+  color: green;
+}
+
+h1 {
+  border: 1px solid red;
+}
+
+h2 {
+  border: 2px dashed green;
+}
+
+h3 {
+  border: 2rem double black;
+}
+
+h4 {
+  border: 1.5rem dotted pink;
+}
+
+/*# sourceMappingURL=each_demo.css.map */
