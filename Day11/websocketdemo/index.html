@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            div{
+                text-align: center;
+                background-color: yellowgreen;
+                font-size: 30px;
+            }
+            input{
+                width:180px;
+                height: 40px;
+            }
+        </style>
+    </head>
+<body>
+    <div>
+    Name: <input type="text" id="name" name="name" placeholder="Enter Your Name"/>
+    <button id="btn1" onclick="showData()">Add Data</button>
+    </div>
+<script>
+    function showData(){
+    const ws= new WebSocket('ws://localhost:8002');
+    ws.addEventListener('open',
+    ()=>{console.log('we are connected ');
+    const data=document.getElementById("name").value;
+    ws.send(data);
+    
+});
+    }
+    </script>
+    
+        
+    </body>
+    </html>

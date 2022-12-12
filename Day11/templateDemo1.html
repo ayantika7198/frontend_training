@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <template id="template1">
+            <style>
+                #result{
+                    text-align: center;
+                    background-color: burlywood;
+                    border: 1px solid brown;
+                }
+            </style>
+            <div id="result"></div>
+
+            <script>
+                let dateObj = new Date();
+                let month = String(dateObj.getMonth() + 1).padStart(2, '0');
+                let day = String(dateObj.getDate()).padStart(2, '0');
+                 year = dateObj.getFullYear();
+                let output = day + '/' + month + '/' + year;
+
+                document.getElementById("result").innerHTML="Today's Date : "+output;
+                </script>
+        </template>
+        <template1></template1>
+
+        <script src="app.js"></script>
+    </body>
+</html>
