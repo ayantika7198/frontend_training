@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            #phone{
+                width:300px;
+                height: 60px;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" name="phone" id="phone" placeholder="Enter Phone Number" onkeydown="check()" oninput="print()"/>
+        <div id="result"></div>
+
+        <script>
+            function check(){
+                var Number = document.getElementById('phone').value;
+                var num = /^[0-9-+()]*$/;
+
+                if(!num.test(Number)){
+                    alert("Please put the phone number in required pattern");
+                }
+            }
+            function print(){
+                var Number = document.getElementById('phone').value;
+                document.getElementById("result").innerHTML="Entered Phone Number: "+Number;
+            }
+        </script>
+    </body>
+</html>

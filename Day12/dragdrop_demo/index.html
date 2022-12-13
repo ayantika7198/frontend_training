@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            #div1{
+                width: 50%;
+                height: 50px;
+                background-color: cornflowerblue;
+                border: 1px solid;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>What flowers do you like?</p>
+        <ul>
+            <li draggable="true" ondragstart="drag(event)" id="list1">Rose</li>
+            <li draggable="true" ondragstart="drag(event)" id="list2">Sunflower</li>
+            <li draggable="true" ondragstart="drag(event)" id="list3">Tulip</li>
+            <li draggable="true" ondragstart="drag(event)" id="list4">Lotus</li>
+            <li draggable="true" ondragstart="drag(event)" id="list5">Lilies</li>
+        </ul>
+        <p>Drop your favourite flowers below.</p>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)""></div>
+        <script src="app.js"></script>
+    </body>
+</html>

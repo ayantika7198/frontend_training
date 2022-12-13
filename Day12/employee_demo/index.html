@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: yellowgreen;
+            }
+            p{
+                font-size: 30px;
+                background-color: violet;
+            }
+            button{
+                background-color: coral;
+            }
+            div{
+                font-size: 30px;
+                width:300px;
+                border:1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <p class="p">Enter Id: <input type="text" name="id" id="id" placeholder="Enter ID" required/></p>
+                <p class="p">Enter Name: <input type="text" name="name" id="name" placeholder="Enter Name" required/></p>
+                    <p class="p">Enter Salary: <input type="text" name="salary" id="salary" placeholder="Enter Salary" required/></p>
+            <button id="btn1" onclick="addEmployee()">Add Employee</button>
+            <button id="btn2" onclick="sortByName()">Sort By Name</button>
+            <button id="btn3" onclick="sortBySalary()">Sort By Salary</button>
+            <div id="result"></div>
+        <script src="app.js"></script>
+    </body>
+</html>

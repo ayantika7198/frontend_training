@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            
+            div{
+                height: 120px;
+                border: 1px solid darkslategrey;
+                margin: 20px;
+                border-width: medium;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .child{
+                flex: 1;
+                background-color: seagreen;
+            }
+            .div2{
+                background-color: cadetblue;
+            }
+        </style></head>
+    <body>
+        <div class="div1">
+            <div class="child" id="d1">
+                <template id="template1">Template 1</template>
+      </div>
+            
+            <div class="child"><h1>H1 Element</h1></div>
+            <div class="child" id="d2">
+                <template id="template2" >Template 2</template>
+            </div>
+        </div>
+        <div class="div2" id="d3">
+           
+                <template id="template3">Template 3</template>
+      
+        </div>
+        <script src="app.js"></script>
+        </body>
+        </html>
