@@ -2,15 +2,52 @@
 <html lang="en">
 
 <head>
+    <style>
+        .div1{
+            margin:auto;
+            width:50%;
+            height: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color: coral;
+            border:none;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+        }
+
+        button{
+            width:100px;
+            height: 30px;
+            background-color: cornflowerblue;
+            color: white;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+       
+        #result{
+            margin:10px;
+            width: 500px;
+            height: 50px;
+        }
+    </style>
    
 </head>
 
 <body>
-
-    <div>
+    
+    <div class="div1">
+        <h1>Calculator Service</h1>
+        Number 1: <input type="text" name="num1" id="num1" required/><br>
+        Number 2:<input type="text" name="num2" id="num2" required/><br>
+        Operation: <input type="text" name="op" id="op" required/><br>
+        <button id="btn1" onclick="perform()">Submit</button>
         <button type="button" onclick="start()">Start Connection</button>
         <button type="button" onclick="stop()">Stop Connection</button>
     </div>
+    <div id="result"></div>
 
 
     <script>
@@ -24,7 +61,43 @@
                 console.log("We are connected");
             });
         }
+        function perform(){
+            console.log("Starting");
 
+            console.log(name);
+            ws = new WebSocket("ws://localhost:8088");
+
+            let num1=parseInt(document.getElementById("num1").value);
+            let num2=parseInt(document.getElementById("num2").value);
+
+            let op=document.getElementById("op").value;
+            let res=0;
+            switch(op){
+                case '+':
+                    res=num1+num2;
+                    break;
+                case '-':
+                    res=num1-num2;
+                    break;
+                case '*':
+                    res=num1*num2;
+                    break;
+                case '/':
+                    res=num1/num2;
+                    break;
+                default:
+                    res=0;
+            }
+            ws.addEventListener('open', () => {
+                console.log("Operation: "+res);
+                document.getElementById("result").innerHTML="Operation: "+res;
+            });
+
+            ws.addEventListener('message', () => {
+                console.log("Operation: "+res);
+            });
+
+        }
         
 
         function stop() {
